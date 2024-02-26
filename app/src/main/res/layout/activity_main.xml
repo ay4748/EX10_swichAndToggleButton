@@ -23,9 +23,11 @@
         android:id="@+id/tglBtn"
         android:layout_width="172dp"
         android:layout_height="86dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="68dp"
+        android:shadowColor="#D08DD3"
         android:text="ToggleButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swtch" />
 
@@ -33,7 +35,7 @@
         android:id="@+id/btn"
         android:layout_width="153dp"
         android:layout_height="89dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="112dp"
         android:onClick="dodge"
         android:text="click"
         app:layout_constraintEnd_toEndOf="parent"

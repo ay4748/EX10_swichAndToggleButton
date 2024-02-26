@@ -17,28 +17,34 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
         tb = findViewById(R.id.tglBtn);
         swtch = findViewById(R.id.swtch);
         btn = findViewById(R.id.btn);
         back = findViewById(R.id.back);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+
     }
 
     public void dodge(View view)
     {
         if (tb.isChecked() && swtch.isChecked())
         {
-            back.setBackgroundColor(0x00FF00);
+            back.setBackgroundColor(0xFFD08DD3);
         }
         else if (tb.isChecked() && !swtch.isChecked())
         {
-            back.setBackgroundColor(0xE6C5D5);
+            back.setBackgroundColor(0xFF173ECA);
         }
         else if (tb.isChecked() && swtch.isChecked())
         {
-            back.setBackgroundColor(0x0000FF);
+            back.setBackgroundColor(0xFF28CA17);
         }
-
+        else if (!tb.isChecked() && !swtch.isChecked())
+        {
+            back.setBackgroundColor(0xFFB53030);
+        }
     }
 }
